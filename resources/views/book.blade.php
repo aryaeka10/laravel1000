@@ -61,7 +61,7 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="{{ route('admin.book.submit') }}" enctype="multipart/form-data">
+                    {{-- <form method="post" action="{{ route('admin.book.submit') }}" enctype="multipart/form-data"> --}}
                     @csrf
                         <div class="form-group">
                             <label for="judul">Judul Buku</label>

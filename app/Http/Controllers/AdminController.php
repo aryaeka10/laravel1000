@@ -28,3 +28,12 @@ class AdminController extends Controller
         return view('book', compact('user', 'books'));
     }
 }
+public function submit_book(Request $req)
+    {
+        $book = new Book;
+
+        $book->judul = $req->get('judul');
+        $book->penulis = $req->get('penulis');
+        $book->tahun = $req->get('tahun');
+        $book->penerbit = $req->get('penerbit');
+    }
